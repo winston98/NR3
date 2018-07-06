@@ -1,0 +1,16 @@
+﻿Report Number,Sample Id,Project Name,Brand NickName,Lab Name,Lab Number,Matrix Type,Sampled DateTime,Received Date,Prep date/time,DateTime Test Started,CAS Number,Analyte Description,Result,Unit of Measure,Qualifier,Dilution Factor,Quantitation Limit,Method
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/12/2018 13:00,Moisture,% Moisture,61.2,%,,1,0.1,RMMA 2.1
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/6/2018 5:35,7429-90-5,Aluminum,8890,mg/Kg - dry,,10,129,AG TOTAL METALS
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/11/2018 9:00,7664-41-7,Ammonia N,0.87,% - dry,,,0.05,RMMA-4.1
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/6/2018 5:35,7440-42-8,Boron,64.4,mg/Kg - dry,,10,64.4,AG TOTAL METALS
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/6/2018 5:35,7440-70-2,Calcium,27600,mg/Kg - dry,,10,129,AG TOTAL METALS
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/6/2018 5:35,7440-50-8,Copper,1860,mg/Kg - dry,,10,6.44,AG TOTAL METALS
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/6/2018 5:35,7439-89-6,Iron,12600,mg/Kg - dry,,10,129,AG TOTAL METALS
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/6/2018 5:35,7439-95-4,Magnesium,24100,mg/Kg - dry,,10,129,AG TOTAL METALS
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/6/2018 5:35,7439-96-5,Manganese,680,mg/Kg - dry,,10,12.9,AG TOTAL METALS
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/6/2018 5:35,7723-14-0,Phosphorus,38400,mg/Kg - dry,,10,129,AG TOTAL METALS
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/6/2018 5:35,9/7/7440,Potassium,5460,mg/Kg - dry,,10,129,AG TOTAL METALS
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/6/2018 5:35,7440-23-5,Sodium,894,mg/Kg - dry,,10,644,AG TOTAL METALS
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/6/2018 5:35,7704-34-9,Sulfur,9770,mg/Kg - dry,,10,129,AG TOTAL METALS
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/11/2018 9:00,7664-41-7,Total Kjeldahl Nitrogen,2.29,% - dry,,,0.051,RMMA 3.1
+18-155-0314,Corbet Farm #1 Shovel,Analytical Testing,WTN,Waypoint Analytical Inc.,94734,Solids,,6/4/2018 0:00,,6/6/2018 5:35,7440-66-6,Zinc,4180,mg/Kg - dry,,10,12.9,AG TOTAL METALS

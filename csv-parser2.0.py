@@ -13,16 +13,10 @@ t_input = Entry(master)
 t_input.pack()
 t_input.focus_set()
 
-moisture = 0.0
-output = []
+output = {}
 
-"""def contains(string, regex):
-    if(re.search(regex, string, re.IGNORECASE) == None):
-        return False
-    else:
-        return True"""
 
-def makeRow(analyte, data):
+"""def makeRow(analyte, data):
     analyte_lower = analyte.lower()
     row = []
     if "nitrogen" not in analyte_lower and "ammonia" not in analyte_lower:
@@ -45,7 +39,30 @@ def makeRow(analyte, data):
         row.append(1.3634 * row[6]) # N2O lbs/day
         row.append(298 * row[8]) # CO2 lbs/day
         row.append(365 * row[9] / 2000) #CO2 tons/yr
-    return row
+    return row"""
+
+def makeEntry(analyte, data):
+    analyte_lower = analyte.lower()
+    entry = {}
+    if "nitrogen" not in analyte_lower and "ammonia" not in analyte_lower:
+        data /= 10000
+    entry["analyte"] = analyte # analyte type
+    entry["dry basis %"] = data # dry basis%    
+    entry["as received"] = data * (1 - moisture/100) # as recieved
+    lbs = 2000 * entry["as received"] / 100
+    if "potassium" in analyte_lower: # 1:1.2046 K to K2O
+        lbs *= 1.2046
+    elif "phosphorus" in analyte_lower: # 1:2.2914 P to P2O5
+        lbs *= 2.2914
+    entry["lbs/ton"] = lbs # lbs/ton
+    entry["lbs/day"] = output["tons/day"] * lbs # lbs/day
+    entry["lbs/yr"] = 365 * entry["lbs/day"] # lbs/yr
+    # N2O & CO2 equivalent only matters for N and NH3
+    if "nitrogen" in analyte_lower or "ammonia" in analyte_lower:
+        row.append(1.3634 * row[6]) # N2O lbs/day
+        row.append(298 * row[8]) # CO2 lbs/day
+        row.append(365 * row[9] / 2000) #CO2 tons/yr
+    return entry
 
 # Many unnecessary middle steps in case intermdiate values need displayed
 def totalCarbon():
@@ -70,16 +87,16 @@ def callback():
     
     with file:
         reader = csv.reader(file)
-        global moisture
+        output["tons/day"] = float(t_input.get()) # tons/day, user input
         for row in reader:
             if(row[1] == "Sample Id"): # skip header row
                 continue
             analyte = row[12]
             data = float(row[13])
             if "moisture" in analyte.lower():
-                moisture = float(row[13])
+                output["moisture"] =  float(row[13])
                 continue
-            output.append(makeRow(analyte, data))
+            output[analyte] = makeEntry(analyte, data)
     # write results to output            
     with open(filename + "-output.csv", "w") as f:
         writer = csv.writer(f)

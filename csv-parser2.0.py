@@ -59,9 +59,9 @@ def makeEntry(analyte, data):
     entry["lbs/yr"] = 365 * entry["lbs/day"] # lbs/yr
     # N2O & CO2 equivalent only matters for N and NH3
     if "nitrogen" in analyte_lower or "ammonia" in analyte_lower:
-        row.append(1.3634 * row[6]) # N2O lbs/day
-        row.append(298 * row[8]) # CO2 lbs/day
-        row.append(365 * row[9] / 2000) #CO2 tons/yr
+        entry["NO2 lbs/day"] = 1.3634 * entry["lbs/day"] # N2O lbs/day
+        entry["CO2 lbs/day"] = 298 * entry["NO2 lbs/day"] # CO2 lbs/day
+        entry["CO2 tons/yr"] = 365 * entry["CO2 lbs/yr"] / 2000 # CO2 tons/yr
     return entry
 
 # Many unnecessary middle steps in case intermdiate values need displayed

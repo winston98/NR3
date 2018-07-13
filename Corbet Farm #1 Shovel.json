@@ -1,0 +1,110 @@
+{
+    "iron": {
+        "dryBasis%": 1.26,
+        "lbs/ton": 9.777600000000001,
+        "asReceived%": 0.48888000000000004,
+        "lbs/yr": 85651.77600000001,
+        "lbs/day": 234.66240000000005
+    },
+    "aluminum": {
+        "dryBasis%": 0.889,
+        "lbs/ton": 6.89864,
+        "asReceived%": 0.344932,
+        "lbs/yr": 60432.0864,
+        "lbs/day": 165.56736
+    },
+    "sodium": {
+        "dryBasis%": 0.0894,
+        "lbs/ton": 0.6937440000000001,
+        "asReceived%": 0.0346872,
+        "lbs/yr": 6077.197440000001,
+        "lbs/day": 16.649856000000003
+    },
+    "manganese": {
+        "dryBasis%": 0.068,
+        "lbs/ton": 0.52768,
+        "asReceived%": 0.026384,
+        "lbs/yr": 4622.4768,
+        "lbs/day": 12.66432
+    },
+    "potassium": {
+        "dryBasis%": 0.546,
+        "lbs/ton": 5.103842016,
+        "asReceived%": 0.211848,
+        "lbs/yr": 44709.65606016,
+        "lbs/day": 122.492208384
+    },
+    "magnesium": {
+        "dryBasis%": 2.41,
+        "lbs/ton": 18.701600000000003,
+        "asReceived%": 0.9350800000000001,
+        "lbs/yr": 163826.01600000003,
+        "lbs/day": 448.8384000000001
+    },
+    "calcium": {
+        "dryBasis%": 2.76,
+        "lbs/ton": 21.417600000000004,
+        "asReceived%": 1.07088,
+        "lbs/yr": 187618.17600000004,
+        "lbs/day": 514.0224000000001
+    },
+    "sampleName": "Corbet Farm #1 Shovel",
+    "copper": {
+        "dryBasis%": 0.186,
+        "lbs/ton": 1.4433599999999998,
+        "asReceived%": 0.072168,
+        "lbs/yr": 12643.833599999996,
+        "lbs/day": 34.64063999999999
+    },
+    "co2PerDay": 26.723346048878668,
+    "total kjeldahl nitrogen": {
+        "lbs/ton": 17.770400000000002,
+        "asReceived%": 0.8885200000000001,
+        "lbs/yr": 155668.70400000003,
+        "lbs/day": 426.48960000000005,
+        "dryBasis%": 2.29,
+        "tons/yrCO2": 31623.5679440064,
+        "lbs/dayNO2": 581.47592064,
+        "lbs/dayCO2": 173279.82435072
+    },
+    "ammonia n": {
+        "lbs/ton": 6.7512,
+        "asReceived%": 0.33756,
+        "lbs/yr": 59140.511999999995,
+        "lbs/day": 162.0288,
+        "dryBasis%": 0.87,
+        "tons/yrCO2": 12014.193935059198,
+        "lbs/dayNO2": 220.91006591999997,
+        "lbs/dayCO2": 65831.19964415999
+    },
+    "sulfur": {
+        "dryBasis%": 0.977,
+        "lbs/ton": 7.58152,
+        "asReceived%": 0.379076,
+        "lbs/yr": 66414.1152,
+        "lbs/day": 181.95648
+    },
+    "tons/day": 24.0,
+    "moisture": 61.2,
+    "phosphorus": {
+        "dryBasis%": 3.84,
+        "lbs/ton": 68.28005375999999,
+        "asReceived%": 1.48992,
+        "lbs/yr": 598133.2709375999,
+        "lbs/day": 1638.7212902399997
+    },
+    "zinc": {
+        "dryBasis%": 0.418,
+        "lbs/ton": 3.24368,
+        "asReceived%": 0.162184,
+        "lbs/yr": 28414.6368,
+        "lbs/day": 77.84832
+    },
+    "boron": {
+        "dryBasis%": 0.00644,
+        "lbs/ton": 0.04997440000000001,
+        "asReceived%": 0.0024987200000000003,
+        "lbs/yr": 437.7757440000001,
+        "lbs/day": 1.1993856000000003
+    }
+}

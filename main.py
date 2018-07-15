@@ -1,6 +1,6 @@
 import csv
-from sample import Sample
 from tkinter import *
+from sample import Sample
 
 master = Tk()
 master.title("CSV Parser")

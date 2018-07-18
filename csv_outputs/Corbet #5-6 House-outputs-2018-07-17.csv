@@ -1,0 +1,19 @@
+Sample Name,Corbet #5-6 House
+Moisture,15.5
+Tons/Day,24.0
+co2PerDay,64.27429664143226
+,lbs/day,Dry Basis %,As Received %,lbs/ton,lbs/yr,N2O lbs/day,CO2 lbs/day,CO2 tons/yr
+sodium,lbs/day: 28.95984,dryBasis%: 0.0714,lbs/yr: 10570.3416,lbs/ton: 1.20666,asReceived%: 0.060333000000000005
+total kjeldahl nitrogen,lbs/day: 403.1664,tons/yrCO2: 29894.1874388976,lbs/dayNO2: 549.67706976,lbs/dayCO2: 163803.76678848,dryBasis%: 0.994,lbs/yr: 147155.736,lbs/ton: 16.7986,asReceived%: 0.83993
+phosphorus,lbs/day: 1803.0201696,dryBasis%: 1.94,lbs/yr: 658102.3619039999,lbs/ton: 75.1258404,asReceived%: 1.6393
+boron,lbs/day: 1.1762399999999997,dryBasis%: 0.0029,lbs/yr: 429.3275999999999,lbs/ton: 0.04900999999999999,asReceived%: 0.0024504999999999996
+potassium,lbs/day: 77.68513583999999,dryBasis%: 0.159,lbs/yr: 28355.074581599994,lbs/ton: 3.2368806599999993,asReceived%: 0.134355
+sulfur,lbs/day: 83.55359999999999,dryBasis%: 0.206,lbs/yr: 30497.063999999995,lbs/ton: 3.4813999999999994,asReceived%: 0.17406999999999997
+manganese,lbs/day: 12.00576,dryBasis%: 0.0296,lbs/yr: 4382.1024,lbs/ton: 0.50024,asReceived%: 0.025012
+aluminum,lbs/day: 73.4136,dryBasis%: 0.181,lbs/yr: 26795.964,lbs/ton: 3.0589,asReceived%: 0.152945
+iron,lbs/day: 249.03840000000002,dryBasis%: 0.614,lbs/yr: 90899.016,lbs/ton: 10.376600000000002,asReceived%: 0.51883
+copper,lbs/day: 4.13712,dryBasis%: 0.0102,lbs/yr: 1510.0488,lbs/ton: 0.17238,asReceived%: 0.008619
+ammonia n,lbs/day: 64.89599999999999,tons/yrCO2: 4811.941640063999,lbs/dayNO2: 88.47920639999998,lbs/dayCO2: 26366.803507199995,dryBasis%: 0.16,lbs/yr: 23687.039999999994,lbs/ton: 2.7039999999999997,asReceived%: 0.1352
+zinc,lbs/day: 75.8472,dryBasis%: 0.187,lbs/yr: 27684.228,lbs/ton: 3.1603,asReceived%: 0.158015
+magnesium,lbs/day: 150.88320000000002,dryBasis%: 0.372,lbs/yr: 55072.36800000001,lbs/ton: 6.2868,asReceived%: 0.31434
+calcium,lbs/day: 2449.8239999999996,dryBasis%: 6.04,lbs/yr: 894185.7599999999,lbs/ton: 102.07599999999998,asReceived%: 5.1038

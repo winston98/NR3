@@ -1,7 +1,3 @@
-import json
-import os
-from datetime import date
-
 class Sample:
 
     def __init__(self):
@@ -49,8 +45,5 @@ class Sample:
         co2PerDay = 3.664191096 * carbonPerDay
         self.output["co2PerDay"] = co2PerDay
 
-    def makeJSON(self):
-        with open(os.path.join(os.path.join(os.getcwd(), "json_outputs"),
-                               self.output["sampleName"] + "-" +
-                               date.today().isoformat() + ".json"), "w") as outfile:
-            json.dump(self.output, outfile)
+    def getOutput(self):
+        return self.output

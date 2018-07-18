@@ -1,5 +1,7 @@
 import csv
+import json
 import os
+from datetime import date
 from tkinter import *
 from tkinter.filedialog import askopenfilename
 from sample import Sample
@@ -15,6 +17,28 @@ for email in emailFetcher.fetch_unread_messages():
     emailFetcher.save_attachment(email,download_path)
 emailFetcher.close_connection()
 
+def makeJSON(output):
+    path = os.path.join(os.getcwd(), "json_outputs", output["sampleName"] +
+                        "-outputs-" + date.today().isoformat() + ".json")
+    with open(path, "w") as outfile:
+        json.dump(output, outfile)
+
+def makeCSV(output):
+    path = os.path.join(os.getcwd(), "csv_outputs", output["sampleName"] +
+                        "-outputs-" + date.today().isoformat() + ".csv")
+    with open(path, "w") as outfile:
+        writer = csv.writer(outfile)
+        writer.writerow(["Sample Name", output["sampleName"]])
+        writer.writerow(["Moisture", output["moisture"]])
+        writer.writerow(["Tons/Day", output["tons/day"]])
+        writer.writerow(["co2PerDay", output["co2PerDay"]])
+        for key in output:
+            if key not in ["sampleName", "moisture", "tons/day", "co2PerDay"]:
+                row = [key]
+                for field in output[key]:
+                    row.append(field + ": " + str(output[key][field]))
+                writer.writerow(row)
+
 def callback():
     # Let user choose file
     filename = askopenfilename(initialdir=download_path,
@@ -29,7 +53,8 @@ def callback():
             elif sample.getName() != row[1]: # sampleName doesn't match
                 if sample.getName() != None: # not None means not first sample
                     sample.totalCarbon()
-                    sample.makeJSON()
+                    makeJSON(sample.getOutput())
+                    makeCSV(sample.getOutput())
                     sample = Sample()
                 sample.add("sampleName", row[1])
                 sample.add("tons/day", float(t_input.get())) # user input
@@ -43,7 +68,8 @@ def callback():
                 continue
             sample.makeEntry(analyte, data)
         sample.totalCarbon()
-        sample.makeJSON()
+        makeJSON(sample.getOutput())
+        makeCSV(sample.getOutput())
 
 master = Tk()
 master.title("CSV Parser")

@@ -1,3 +1,8 @@
+"""
+Author: John Paul Hayes
+Source: https://stackoverflow.com/questions/6225763/downloading-multiple-attachments-using-imaplib
+"""
+
 import email
 import imaplib
 import os

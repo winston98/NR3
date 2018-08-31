@@ -1,3 +1,5 @@
+from datetime import date
+
 class outputMaker:
 
     whitelist = ["aluminum", "boron", "calcium", "copper", "iron", "k2o - total",
@@ -29,12 +31,14 @@ class outputMaker:
 
     def makeOutput(self):
         self.output["sampleName"] = self.data["sampleName"]
+        self.output["runDate"] = date.today().isoformat()
+        self.output["testDate"] = self.data["testDate"]
         for key in self.data:
-            value = self.data[key]
+            dataEntry = self.data[key]
             if key in outputMaker.whitelist:
-                self.makeSubEntry(key, value)
+                self.makeSubEntry(key, dataEntry)
             else:
-                self.output[key] = value
+                self.output[key] = dataEntry
         self.makeTotalCO2()
         
     def getOutput(self):

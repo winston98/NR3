@@ -11,10 +11,12 @@ def update():
         reader = csv.reader(newCSV)
         for row in reader:
             sampleName = row[1]
-            if sampleName == "Sample Name": # skip header row
+            # skip header row
+            if sampleName == "Sample Name":
                 continue
             test = row[8].lower()
             value = row[9]
+            date = row[3]           
             # drop "<" sign
             if "<" in value:
                 value = value[1:]
@@ -25,15 +27,16 @@ def update():
                 pass
             dataPath = os.path.join(os.getcwd(), "data", sampleName + ".json")
             dataObject = {}
-            with open(dataPath, "r") as file:
-                # if file is newly created, then dataObject is empty
-                try:
+            # if no data file exists for this sample name, then create that file
+            try:
+                with open(dataPath, "r") as file:
                     dataObject = json.load(file)
-                except json.decoder.JSONDecodeError:
-                    pass
+            except:
+                pass
             with open(dataPath, "w") as file:
                 dataObject["sampleName"] = sampleName
-                dataObject[test] = value                
+                dataObject["testDate"] = date
+                dataObject[test] = value
                 json.dump(dataObject, file)
 
 # On startup, download attatchments from unread files

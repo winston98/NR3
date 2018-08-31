@@ -1,6 +1,5 @@
 import json
 import os
-from datetime import date
 import tkinter as tk
 from tkinter.filedialog import askopenfilename
 from output_maker import outputMaker
@@ -20,7 +19,7 @@ def callback():
     output = maker.getOutput()
     outputPath = os.path.join(os.getcwd(), "json_outputs", 
                               output["sampleName"] + "-output-" +
-                              date.today().isoformat() + ".json")
+                              output["runDate"] + ".json")
     with open(outputPath, "w") as outfile:
         json.dump(output, outfile)
         
